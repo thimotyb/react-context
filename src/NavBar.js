@@ -1,9 +1,9 @@
 import React,{useContext} from "react";
-import {MovieContext, MyContext} from "./MovieContext"
+import {MyContext} from "./MovieContext"
 function NavBar(){
-    const [NewContext,] = useContext(MyContext)
+    const [movies,] = useContext(MyContext)
     return (
-        <p>Length : {NewContext.length} </p>
+        <p>Length : {movies.length} </p>
     )
 }
 export default NavBar;

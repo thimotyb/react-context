@@ -2,14 +2,14 @@ import React,{useContext} from "react"
 import {MyContext} from "./MovieContext"
 
 function MovieList() {
- const [NewContext,setNewContext] =  useContext(MyContext);
+ const [movies,] =  useContext(MyContext);
 return (
 <div>
     {
-    NewContext.map((movies)=>(
+    movies.map((movie)=>(
         <React.Fragment>
-            <h3>{movies.name}</h3>
-            <p>{movies.Price}</p>
+            <h3>{movie.name}</h3>
+            <p>{movie.Price}</p>
         </React.Fragment>
     ))
 
